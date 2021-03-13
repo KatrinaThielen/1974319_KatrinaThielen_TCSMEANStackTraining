@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+/* .container class consists of website site and orientation */
+.container {
+	width: 1080px;
+	margin: auto;
+	background-color: #685c46;
+	padding: 10px;
+}
+
+/* .header-container class lists business/company title / individual name */
+.header-container header {
+	font-family: Nunito;
+	text-align: center;
+	color: white;
+	text-transform: uppercase;
+	padding: 10px;
+	font-size:36px;
+}
+
+/* <nav> tag styles the navigation bar */
+nav{
+	width:100%;
+	text-align: center;
+	font-family: Nunito;
+	text-transform: uppercase;
+	font-size:16px;
+	
+}
+	/* addresses any list items located in 'nav' */
+	nav ul li{
+		list-style-type: none; 
+		display: inline-block;  
+		width: 150px; 			
+	}
+
+	/* addresses any anchors located in 'nav' */
+	nav a{
+		display: block;				
+		text-decoration: none;
+		color: white;	
+		text-align: center;		
+		padding: 5px 0;		
+		transition: .8s ease;
+
+	}
+	/* hovering over navigation items */
+	nav a:hover{
+		background-color: #94aa62;
+		color: white;
+		border-bottom: 3px solid black;
+		transition: .8s ease;
+	}
+
+	/* when user is on navigation page/item */
+	.active{
+		background-color:#969696;
+		color:white;
+		border-bottom: 2px solid black;
+
+	}
+
+
+	/* introduction section for text content */
+#introduction{
+		background-color: white;
+		color: black;
+		width: 100%;
+		text-align: center;
+		min-height: 200px;
+		padding: 10px 0;
+		font-family: Nunito;
+
+	}
+
+#introduction h2{
+	font-size: 30px;
+	color:#3b3b3b;
+	text-transform: uppercase;
+}
+
+#introduction p{
+	font-size: 13px;
+	color: #3b3b3b;
+	padding: 0px 30px;
+}
+
+
+#displayExamples{
+	margin-left: auto;
+	margin-right: auto;
+	width: 98%;
+	padding: 10px;
+	background-color:#cdc18f;
+}
+
+#displayExamples img{
+
+	border: 10px solid #969696;
+	margin: 1%;
+	opacity:.75;
+	transition: .8 ease;
+}
+
+#displayExamples img:hover{
+	opacity: 1;
+	transition: .8 ease;
+}
+
+.clearfix{
+	clear:both;
+}
+
+.footer-container{
+	text-transform: uppercase;
+	background-color:#94aa62;
+	min-height: 50px;
+	text-align: center;
+	font-weight: bold;
+	font-family: Nunito;
+	padding: 5px;
+}
