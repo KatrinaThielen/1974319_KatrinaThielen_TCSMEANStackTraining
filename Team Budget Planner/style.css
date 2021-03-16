@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+.container {
+	width: 1080px;
+	height: 600px;
+	margin: 100px 130px;
+	background-color: #94aa62;
+	padding: 50px;
+}
+
+.main-container{
+	margin: auto;
+	padding: 45px;
+	text-align: center;
+	font-family: 'Roboto Mono', monospace;
+
+}
+
+.main-container h2{
+	font-size: 36px;
+	text-transform: uppercase;
+}
+
+
+
+.main-container ul li{
+	list-style-type: none;
+	display: inline-block;
+	width: 200px;
+	height:150px;
+	margin: 10px;
+}
+
+
+.main-container a{
+	display: block;
+	text-decoration: none;
+	color: black;
+	border: 1px solid black;
+	border-radius: 90px;
+	font-weight: bold;
+	padding: 10px 0;
+	transition: .8s ease;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.main-container a:hover{
+	background-color:#ececec;
+	border-bottom: 4px solid black;
+	border-radius: 90px;
+	font-weight: 900;
+	transition: .8s ease;
+}
+
+form{
+	padding: 10px;
+	border: 1px solid black;
+	width: 500px;
+	margin: auto;
+	color: white;
+	opacity: .7;
+	transition: .8s ease;
+	background-color: #685c46;
+}
+
+form:hover{
+	opacity: 1;
+	transition: .8s ease;
+}
+
+table{
+	background-color: #948a62;
+	border: 2px solid #3b3b3b;
+	margin: auto;
+}
+
+table tr{
+	background-color: #685c46;
+	color: white;
+	border-bottom: 5px solid #3b3b3b;
+}
+
+table th{
+	width: 200px;
+	text-align: center;
+}
+
+#total td{
+	width: 302px;
+	font-size: 16px;
+	text-align: center;
+}
+
+table tbody{
+	font-size: 14px;
+	background-color: red;
+
+}

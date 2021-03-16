@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program Management</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="javaScript.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+	<div class="main-container">
+		<h2>Add New Budget</h2>
+		<br>
+		<p><strong>Welcome, Program Managers!</strong></strong> <br> Please fill out the following information accordingly for your assigned budget.</p>
+		<br>
+
+		<form >
+			<label for="Client Name">Client Name</label>
+			<input type="client" name="client" id="client" placeholder="Insert Full Client Name" required/> <br/>
+
+			<label for="Project Name">Project Name</label>
+			<input type="project" name="project" id="project" placeholder="Insert Project Name" required/> <br/>
+
+			<label for="Budget">Budget</label>
+			<input type="number" name="budget" id="budget" placeholder="Insert Budget Allocated" required/> <br/>
+
+			<br>
+
+			<input type="button" value="Add Budget" onclick="onFormSubmit()"/> 
+			<input type="reset" value="Clear"/>
+
+		</form>
+
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="financeTeam.html">Financial Team</a></li>
+		</ul>
+	</div>
+
+
+</div>
+
+
+
+</body>
+</html>
