@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cart Management!</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<script src="cartManagement.js"></script>
+<link rel="stylesheet" href="cart.css">
+
+
+</head>
+<body onload="upload();">
+<div class="container main-content">
+    <div class="intro justify-content-left">
+    <h2>Shopping Cart</h2>
+    <br>
+    <p>Welcome to the Shopping Cart Project! Please add items to the cart below and proceed to checkout to simulate a shopping cart!</p>
+    <br>
+    <div id="currentSelection">
+        <h3>Cart Currently Contains:</h3>
+        <div id="itemHere">
+            <p id="name"> </p>
+        </div>
+    </div>
+</div>
+    <div class="container justify-content-right">
+        <input type="button" onclick="checkout();" value="Proceed To Checkout">
+    </div>
+    <hr>
+    <!-- First Row of Items -->
+    <div class="row text-center container justify-content-center"id="showcase">
+        <!-- Card to display fruitMango -->
+        <div class="col-lg-2 col-md-6 mb-4">
+            <div class="card h-100">
+                <img class="card-img-top" src="mango.png" alt="Mango">
+                <div class="card-body">
+                    <h4 class="card-title" id="itemName">Mango</h4>
+                    <p class="card-text" id="itemPrice">$7.00</p>
+                </div>
+                <div class="card-footer">
+                    <a onclick="addItem(fruitMango, cart);" class="btn btn-outline-secondary">ADD</a>
+                </div>
+            </div>
+        </div>
+        <!-- Card to display fruitLemon -->
+        <div class="col-lg-2 col-md-6 mb-4">
+            <div class="card h-100">
+                <img class="card-img-top" src="lemon.png" alt="Lemon">
+                <div class="card-body">
+                    <h4 class="card-title" id="itemName">Lemon</h4>
+                    <p class="card-text" id="itemPrice">$6.00</p>
+                </div>
+                <div class="card-footer">
+                    <a onclick="addItem(fruitLemon, cart);" class="btn btn-outline-secondary">ADD</a>
+                </div>
+            </div>
+        </div>
+        <!-- Card to display fruitCherry -->
+        <div class="col-lg-2 col-md-6 mb-4">
+            <div class="card h-100">
+                <img class="card-img-top" src="cherry.png" alt="Cherry">
+                <div class="card-body">
+                    <h4 class="card-title" id="itemName">Cherry</h4>
+                    <p class="card-text" id="itemPrice">$4.00</p>
+                </div>
+                <div class="card-footer">
+                    <a onclick="addItem(fruitCherry, cart);" class="btn btn-outline-secondary">ADD</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row text-center container justify-content-center"id="showcase">
+        <!-- Card to display fruitPom -->
+        <div class="col-lg-2 col-md-6 mb-4">
+            <div class="card h-100">
+                <img class="card-img-top" src="pomegranate.png" alt="Pomergranate">
+                <div class="card-body">
+                    <h4 class="card-title" id="itemName">Pomergranate</h4>
+                    <p class="card-text" id="itemPrice">$5.00</p>
+                </div>
+                <div class="card-footer">
+                    <a onclick="addItem(fruitPom, cart);" class="btn btn-outline-secondary">ADD</a>
+                </div>
+            </div>
+        </div>
+        <!-- Card to display fruitOrange -->
+        <div class="col-lg-2 col-md-6 mb-4">
+            <div class="card h-100">
+                <img class="card-img-top" src="citrus.png" alt="Orange">
+                <div class="card-body">
+                    <h4 class="card-title" id="itemName">Orange</h4>
+                    <p class="card-text" id="itemPrice">$3.00</p>
+                </div>
+                <div class="card-footer">
+                    <a onclick="addItem(fruitOrange, cart);" class="btn btn-outline-secondary">ADD</a>
+                </div>
+            </div>
+        </div>
+          <!-- Card to display fruitApple -->
+        <div class="col-lg-2 col-md-6 mb-4">
+            <div class="card h-100">
+                <img class="card-img-top" src="apple.png" alt="Apple">
+                <div class="card-body">
+                    <h4 class="card-title" id="itemName">Apple</h4>
+                    <p class="card-text" id="itemPrice">$1.00</p>
+                </div>
+                <div class="card-footer">
+                    <a onclick="addItem(fruitApple, cart);" class="btn btn-outline-secondary">ADD</a>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+        
+
+
+    </div>
+
+</body>
+</html>
