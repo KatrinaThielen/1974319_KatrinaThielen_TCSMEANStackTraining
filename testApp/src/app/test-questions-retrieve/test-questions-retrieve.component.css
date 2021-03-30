@@ -1,0 +1,35 @@
+.content{
+    margin: auto;
+}
+
+.content h2{
+    font-size: 48px;
+}
+.question{
+    margin: 5%;
+    border-bottom: 3px double #ececec;
+    padding: 15px;
+    font-size: 16px;   
+}
+
+.choice{
+    font-size: 19px;
+    padding: 10px;
+    display: block;
+    transition: ease .1s;
+}
+
+.choice:hover{
+    background-color:#685c46;
+    color: white;
+    transition: ease .1s;
+}
+
+.content button{
+    margin: 5px 790px;
+    text-align: center;
+    padding: 15px;
+    width: 300px;
+    text-transform: uppercase;
+}
+

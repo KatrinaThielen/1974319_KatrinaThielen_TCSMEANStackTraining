@@ -1,0 +1,24 @@
+.intro{
+    margin: auto;
+    padding:10%;
+    text-align: center;
+    transition: ease .3s;
+}
+
+.intro p{
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.intro button{
+    width: 400px;
+    height: 60px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.intro:hover{
+    color:white;
+    transition: ease .3s;
+}
+

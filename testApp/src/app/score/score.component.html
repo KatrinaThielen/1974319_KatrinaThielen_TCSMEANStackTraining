@@ -1,0 +1,49 @@
+<div class="container resultContent">
+    <div class="congrats">
+    <h2>Results</h2>
+    <h1>{{correct}} / 10</h1>
+    <h2>{{result}}</h2>
+    </div>
+    <hr>
+    <div *ngFor="let q of questions; let x = index">
+
+        <!-- Answer was correct -->
+        <div *ngIf ="q.ans == inputs[x]">
+            <h3>Correct!</h3>
+            <h2>{{q.num}}. {{q.question}}</h2>
+            You provided the correct answer : <strong>{{inputs[x]}} </strong>
+            <br>
+            <hr>
+        </div>
+        <!-- Answer was Incorrect -->
+        <div *ngIf ="q.ans != inputs[x]">
+            <h3>Incorrect</h3>
+            <h2>{{q.num}}. {{q.question}}</h2>
+            You answered : <strong>{{inputs[x]}}</strong>
+            <br>
+            The correct answer is : <strong>{{q.ans}}</strong>
+            <br>
+            <hr>
+        </div>
+
+        <!-- <h2>{{q.num}}. {{q.question}}</h2> <br>
+        You selected
+        <p *ngIf="q.a == inputs[x]">{{q.a}}</p> <br>
+        this is inputs {{inputs[x]}}
+        <p *ngIf="q.b == inputs[x]">{{q.b}}</p> <br>
+        <p *ngIf="q.c == inputs[x]">{{q.c}}</p> <br>
+        <p *ngIf="q.d == inputs[x]">{{q.d}}</p> <br>
+        The correct answer
+        <p *ngIf="q.a == q.ans">{{q.a}}</p>    <br>
+        <p *ngIf="q.b == q.ans">{{q.b}}</p>    <br>
+        <p *ngIf="q.c == q.ans">{{q.c}}</p>    <br>
+        <p *ngIf="q.d == q.ans">{{q.d}}</p>    <br>
+
+        <h2 *ngIf = "q.ans == inputs[x]">YOU GOT #{{q.num}} RIGHT!</h2>
+        <h2 *ngIf = "q.ans != inputs[x]">INCORRECT, Please review :-)</h2> -->
+    </div>
+   
+    <button class="btn btn-outline-dark" (click)="homePage();">Go Home</button>
+    <button class="btn btn-outline-dark" (click)="testPage();">Back to Exam</button>
+
+</div>

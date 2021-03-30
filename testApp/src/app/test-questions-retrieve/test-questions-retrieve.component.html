@@ -1,0 +1,22 @@
+<div class="container content">
+    <h2 class="justify-content-center">Online Assessment</h2>
+    <form [formGroup]="testRef" (ngSubmit)="checkAns()">
+        <div *ngFor="let que of questions" class="question">
+
+            <h2>{{que.num}}. {{que.question}}</h2> <br>
+            <div class="choice">
+            <input type="radio" value={{que.a}} formControlName="{{'quest' + que.num}}"/> {{que.a}}  <br>
+            </div>
+            <div class="choice">
+            <input type="radio" value={{que.b}} formControlName="{{'quest' + que.num}}"/>   {{que.b}}   <br>
+        </div>
+        <div class="choice">
+            <input type="radio" value={{que.c}} formControlName="{{'quest' + que.num}}"/>   {{que.c}}   <br>
+        </div>
+        <div class="choice">
+            <input type="radio" value={{que.d}} formControlName="{{'quest' + que.num}}"/>   {{que.d}}   <br>
+        </div>
+        </div>
+        <button type=submit class="btn btn-outline-dark justify-content-right" >Submit Assessment</button>
+    </form>
+</div>

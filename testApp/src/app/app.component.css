@@ -1,0 +1,8 @@
+.main{
+    background-color: #969696;
+    margin: 10%;
+    min-height: 400px;
+    padding: 5%;
+    box-shadow: #3b3b3b 2px 3px 5px;
+    border-radius: 10px;
+}

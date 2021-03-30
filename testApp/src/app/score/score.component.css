@@ -1,0 +1,10 @@
+.congrats{
+    text-align: center;
+    font-weight: bold;
+}
+
+.resultContent button{
+    padding: 10px 50px 10px 50px;
+    margin: 5px 150px 5px 150px;
+    display: inline-block;
+}
