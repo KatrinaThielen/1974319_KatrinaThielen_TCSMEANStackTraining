@@ -1,0 +1,22 @@
+<div class="option">
+    <button mat-stroked-button="primary" (click)="listView();">View Cards</button>
+</div>
+<div class="container content">
+
+    <table>
+        <thead>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Task</th>
+            <th>Deadline</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let t of tArr">
+                <td>{{t.id}}</td>
+                <td>{{t.name}}</td>
+                <td>{{t.task}}</td>
+                <td>{{t.deadline}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

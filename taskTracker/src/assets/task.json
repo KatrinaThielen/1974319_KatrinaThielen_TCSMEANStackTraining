@@ -1,0 +1,52 @@
+{
+  "tasksList": [
+    {
+      "id": 1,
+      "name": "Katrina Thielen",
+      "task": "Complete Simplilearn Phase 2",
+      "deadline": "2021-03-31"
+    },
+    {
+      "id": "1234567",
+      "name": "Ravi Kumar",
+      "task": "Submit Phase 3 Assignment",
+      "deadline": "2021-04-01"
+    },
+    {
+      "id": "8910111",
+      "name": "Jane Doe",
+      "task": "Complete Simplilearn 4",
+      "deadline": "2021-04-08"
+    },
+    {
+      "id": "1233211",
+      "name": "John Smith",
+      "task": "GUI Update for Phase",
+      "deadline": "2021-04-06"
+    },
+    {
+      "id": "3211233",
+      "name": "Keeta Jumani",
+      "task": "Submit Phase 4 Assignment",
+      "deadline": "2021-04-10"
+    },
+    {
+      "id": "9384723",
+      "name": "Alexis",
+      "task": "Stacy",
+      "deadline": "2021-04-19"
+    },
+    {
+      "id": "123455",
+      "name": "testing",
+      "task": "Get Task Tracker To Work",
+      "deadline": "2021-03-28"
+    },
+    {
+      "id": "0000000",
+      "name": "again",
+      "task": "Task Tracker",
+      "deadline": "2021-03-30"
+    }
+  ]
+}

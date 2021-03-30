@@ -1,0 +1,21 @@
+<div class="option">
+    <button mat-stroked-button="primary" (click)="tableView();">View Table</button>
+</div>
+<div class="container list">
+    <div class="cardSpace" *ngFor="let t of tArr">
+        <mat-card class="cardClass input" >
+            <mat-card-header class="head">
+                <mat-card-title>{{t.task}}</mat-card-title>
+                <mat-card-subtitle>Created by: {{t.name}}, ID# {{t.id}}</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content class="cardContent">
+                Nunc et sapien facilisis, rutrum diam vel, interdum lectus. Donec tempor finibus mi, et blandit nulla 
+                hendrerit vel. Etiam orci erat, interdum ac magna et, mollis volutpat est. Nulla facilisi. Fusce eget 
+                iaculis nisl. Sed ipsum sem, condimentum sit amet lorem quis, porta finibus nisi. Vivamus mattis et 
+                orci sit amet dignissim. Vestibulum vitae placerat sapien.
+                <br>
+                <p id="deadline"><strong>DEADLINE: {{t.deadline}}</strong></p>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>

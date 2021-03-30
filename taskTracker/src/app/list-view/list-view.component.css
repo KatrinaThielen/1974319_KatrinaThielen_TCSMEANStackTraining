@@ -1,0 +1,30 @@
+table{
+    margin:auto;
+    padding: 15px;
+    text-align: center;
+    background: rgb(63, 58, 58);
+    color:white;
+    border-radius: 8px;
+
+    box-shadow: 3px 2px 3px black;
+}
+
+th{
+    text-transform: uppercase;
+    font-size: 18px;
+    width:270px;
+    padding: 5px;
+    height: 40px;
+    border-bottom: 3px solid black;
+}
+
+tr{
+    height: 32px;
+}
+
+.option button{
+    margin:20px 500px;
+    width: 300px;
+    text-transform: uppercase;
+    padding: 4px;
+}

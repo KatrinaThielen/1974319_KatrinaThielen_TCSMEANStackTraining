@@ -1,0 +1,33 @@
+<div class="container content">
+    <p class="lead">To-Do Tasks</p>
+    <!-- Adding To-Do Tasks to the Task Tracker JSON -->
+    <form class="form justify-content-center forms" #taskRef="ngForm" (ngSubmit)="storeTask(taskRef.value)">
+        <!-- ID JSON Input -->
+        <mat-form-field>
+            <mat-label>ID</mat-label>
+            <input matInput type="text" name="id" ngModel required/>
+        </mat-form-field>
+        &nbsp;
+        <!-- NAME JSON Input -->
+        <mat-form-field>
+            <mat-label>Name</mat-label>
+            <input matInput type="text" name="name" ngModel required/>
+        </mat-form-field>
+        &nbsp;
+        <!-- TASK JSON Input -->
+        <mat-form-field>
+            <mat-label>Task</mat-label>
+            <input matInput type="text" name="task" ngModel required/>
+        </mat-form-field>
+        &nbsp;
+        <!-- DEADLINE JSON Input -->
+        <mat-form-field>
+            <mat-label>Deadline</mat-label>
+            <input matInput type="date" name="deadline" ngModel required/>
+        </mat-form-field>
+        <button mat-button class="primary" type="reset">Reset</button>
+        <button mat-button class="primary" type="submit" [disabled]="!taskRef.valid">Submit Task</button>
+
+    </form>
+</div>
+

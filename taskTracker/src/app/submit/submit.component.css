@@ -1,0 +1,28 @@
+.input{
+    margin: auto;
+    padding: 15px;
+}
+
+.lead {
+    text-align: center;
+    font-size: 36px;
+    font-weight:lighter;
+    padding: 5px;
+}
+
+.forms{
+    padding: 20px;
+    text-align: center;
+    border: 2px solid rgb(44, 44, 44);
+    border-radius: 5px;
+}
+.head{
+    padding: 20px 15px 0px 0px;
+}
+
+.form{
+    margin: 20px 50px;
+}
+.content{
+    padding: 30px 0px 5px 0px;
+}
