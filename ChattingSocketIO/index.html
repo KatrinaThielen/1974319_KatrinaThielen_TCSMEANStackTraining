@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socket IO Chat Program</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/JavaScript">
+
+    var socket = io();
+ 
+    function sendMsg() {
+        var username = document.getElementById("name").value;
+        var textmsg = document.getElementById("messageInfo").value;
+
+        var output = username.toUpperCase() + " : " + textmsg;
+        // console.log("MESSAGE SENT : ", output);
+        socket.emit("Message", output);
+    }
+
+    </script>
+    <style>
+        h1{
+            padding: 10px;
+            margin: 0px 500px 0px 550px;
+        }
+
+        .main{
+            width: auto;
+            margin: 20px;
+            padding: 20px;
+            background-color: rgb(199, 199, 199);
+        }
+
+        input{
+            margin: auto;
+            width: 200px;
+        }
+
+        textarea{
+            width: 400px;
+            height: 100px;
+        }
+
+        div #nameinput {
+            margin: 0px 500px 0px 505px;
+
+        }
+
+        div #messageinput {
+            margin: 5px 350px 5px 550px;
+        }
+
+        button {
+            margin: auto;
+            width: 405px;
+            height: 30px;
+        }
+    </style>
+</head>
+    <body>
+
+        <h1>Welcome to the Socket.IO Chat!</h1>
+        
+        <div class="main">
+
+            <div id="nameinput">
+                <label>Name</label>
+                <input type="text" id="name" placeholder="Display Name"></input><br>
+            </div>
+
+            <div id="messageinput">
+                <textarea id="messageInfo" placeholder="Type message here..."></textarea>
+                <button onclick="sendMsg()">Send Message</button>
+            </div>
+
+        </div>
+
+    </body>
+</html>
