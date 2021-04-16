@@ -1,0 +1,14 @@
+{
+  "name": "call-record",
+  "version": "1.0.0",
+  "description": "",
+  "main": "call_data.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Katrina",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^5.12.4"
+  }
+}
